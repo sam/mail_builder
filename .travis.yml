@@ -1,0 +1,9 @@
+language: ruby
+rvm:
+  - jruby-head
+install: gem install doubleshot
+jdk:
+  - openjdk6
+  - openjdk7
+  - oraclejdk7
+script: doubleshot test --ci

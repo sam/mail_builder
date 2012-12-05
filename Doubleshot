@@ -1,0 +1,19 @@
+# encoding: utf-8
+
+Doubleshot.new do |config|
+  config.project = "mail_builder"
+  config.version = "1.0"
+  
+  config.gem "mime-types"
+  
+  config.gemspec do |spec|
+    spec.summary        = "MailBuilder is a simple library for building RFC compliant MIME emails."
+    spec.description    = <<-DESCRIPTION
+MailBuilder is a simple library for building RFC compliant MIME emails.
+DESCRIPTION
+    spec.homepage       = "https://github.com/sam/mail_builder"
+    spec.authors        = [ "Bernerd Schaefer", "Sam Smoot" ]
+    spec.email          = "ssmoot@gmail.com"
+    spec.license        = "MIT-LICENSE"
+  end
+end

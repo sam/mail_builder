@@ -1,5 +1,7 @@
 # MailBuilder
 
+[![Build Status](https://secure.travis-ci.org/sam/mail_builder.png)](http://travis-ci.org/sam/mail_builder)
+
 MailBuilder is a library for building RFC compliant MIME messages,
 with support for text and HTML emails, as well as attachments.
 

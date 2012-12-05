@@ -1,13 +1,11 @@
 # encoding: UTF-8
 
-require 'pathname'
-require 'time'
+require "java"
+require "pathname"
+require "time"
 
-require 'rubygems'
-require 'mime/types'
-require 'uuidtools'
-
-require 'rubygems'
+require "rubygems"
+require "mime/types"
 
 ##
 # MailBuilder is a library for building RFC compliant MIME messages,
@@ -33,7 +31,7 @@ require 'rubygems'
 #
 ##
 class MailBuilder
-  require Pathname(__FILE__).dirname + 'mail_builder/attachment'
+  require Pathname(__FILE__).dirname + "mail_builder/attachment"
 
   ##
   # Boundary characters, slightly adapted from those allowed by rfc1341,
@@ -125,7 +123,7 @@ class MailBuilder
   # various states -- including bounces -- allowing it to be tracked.
   ##
   def envelope_id
-    @envelope_id ||= UUIDTools::UUID.random_create.to_s
+    @envelope_id ||= java.util.UUID.random_uuid.to_s
   end
 
   ##

@@ -1,7 +1,7 @@
 # encoding: utf-8
 
 Doubleshot.new do |config|
-  config.project = "mail_builder"
+  config.project = "mail_builder19"
   config.version = "1.0"
   
   config.gem "mime-types"
